@@ -1,0 +1,47 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Island</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client/js/lib/phaser.min.js"></script>
+    <script src="client/js/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: #000000;
+        }
+        #gameHolder{
+            margin: 0 auto;
+            margin-top: 5%;
+            background: #0000FF;
+            width: 640px;
+            height: 448px;
+        }
+        #chatInput{
+            display: none;
+            margin: 0 auto;
+            position: absolute;
+            margin-top: -34px;
+            margin-left: 402px;
+            width: 616px;
+            border: 0px;
+            padding: 10px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+            outline: none; 
+        }
+        canvas{
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameHolder"></div>
+    <input id="chatInput" type="text" maxlength="50"></input>
+</body>
+</html>
